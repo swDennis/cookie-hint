@@ -1,7 +1,7 @@
 # Cookie hint
 simple jQueryPlugin to show a cookie hint. DSGVO
 
-# How to use.
+## How to use.
 ```html
 
 <body>
@@ -22,14 +22,14 @@ simple jQueryPlugin to show a cookie hint. DSGVO
 
 </body>
 ```
-# Configure
+## Configure
 ```html
 <!--Use data-attributes to configure the plugin like below-->
 <body data-cookieHintPrivacyPolicyLink="https://policies.google.com/privacy?hl=de&gl=de"
       data-cookieHintOkLinkStyle="color: red; background: green; padding: 9px;"
       data-cookieHintContainerStyle="text-align:center;">
 ```
-# Possible data-attributes
+### Possible data-attributes
 see defaults object and prefix with **"data-"**
 
  - cookieHintShowPrivacyPolicyLink
