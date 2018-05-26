@@ -81,7 +81,7 @@
 
     CookieHint.prototype.createOkButton = function () {
         var me = this,
-            button = $('<a href="#">');
+            button = $('<a>');
 
         button.addClass(me.opts.cookieHintOkLinkClass);
         button.append(me.opts.cookieHintOkButtonText);
@@ -141,6 +141,8 @@
 
     CookieHint.prototype.onclick = function () {
         var me = this;
+
+        event.preventDefault();
 
         me.createCookie(me.opts.cookieHintCookieName, me.opts.cookieHintCookieValue, 360);
         me.$cookieHint.hide();
