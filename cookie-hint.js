@@ -52,7 +52,6 @@
     CookieHint.prototype.initObjects = function () {
         var me = this;
 
-        me.$body = $('body');
         me.$cookieHint = me.createCookieHintContainer();
         me.$okButton = me.createOkButton();
         me.text = me.opts.cookieHintText;
@@ -136,7 +135,8 @@
 
     CookieHint.prototype.addHint = function () {
         var me = this;
-        me.$body.append(me.$cookieHint);
+
+        me.$el.append(me.$cookieHint);
     };
 
     CookieHint.prototype.onclick = function () {
@@ -184,7 +184,6 @@
 
         return null;
     };
-
 
     $.fn.CookieHint = function () {
         new CookieHint(this);
