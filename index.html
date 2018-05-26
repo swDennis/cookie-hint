@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <title>This is a test</title>
+
+    <style>
+        /*
+        Style the Components or use the data-attributes to style the elements
+        */
+    </style>
+</head>
+
+<!--Use data-attributes to configure the plugin like below-->
+<body data-privacyPolicyLink="https://policies.google.com/privacy?hl=de&gl=de"
+      data-cookieHintOkLinkStyle="color: red; background: green; padding: 9px;"
+      data-cookieHintContainerStyle="text-align:center;">
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="cookie-hint.js"></script>
+
+<script type="text/javascript">
+    (function () {
+        $(document).ready(function () {
+            $('body').CookieHint();
+        })
+    })();
+</script>
+
+</body>
+</html>
