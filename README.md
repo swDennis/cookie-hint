@@ -14,7 +14,7 @@ simple jQueryPlugin to show a cookie hint. DSGVO
 
 <script type="text/javascript">
     (function () {
-        $(document).ready(function () {
+        $(function () {
             $('body').CookieHint();
         })
     })();
